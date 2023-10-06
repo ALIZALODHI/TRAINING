@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #3e3e3e;
+    background: url(./images/bk.png) no-repeat 0 0;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 64px;
+    font-size: 1.2em;
+    
+}
+
+.logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.menu-list li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 44px;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.menu-list li:hover {
+    color: #ff0073;
+}
+
+.main {
+    padding-top: 90px;
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+
+
+.left {
+    max-width: 50%;
+    padding: 0 64px;
+    
+}
+.title {
+    font-size: 2.8em;
+    letter-spacing: 1px;
+    margin: 48px auto;
+}
+
+.title strong {
+    font-size: 1.5em;
+    display: block;
+    line-height: 80px;
+}
+
+.msg {
+    max-width: 80%;
+    font-size: 1em;
+    letter-spacing: 0.7px;
+    line-height: 32px;
+    margin-bottom: 48px;
+}
+
+button.btn {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #ff0073;
+    padding: 18px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+button.btn:hover {
+    background-color: #fdf3f8;
+}
+
+
+
+button.btn i {
+    font-size: 1.7em;
+    margin-left: 16px;
+}
+
+
+.right {
+    padding: 40px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.right img {
+    max-width: 450px;
+}
+
+
+
+.rightsec2 {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 310px;
+}
+
+
+
+
+.rightsec2 img {
+    max-width: 450px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    body {
+        min-height: 100vh;
+        min-width: 100vw;
+       
+    }
+
+.title {
+    font-size: 36px;
+    letter-spacing: 1px;
+    margin: 18px auto;
+}
+
+.title strong {
+    font-size: 36px;
+    display: block;
+    line-height: 40px;
+}
+
+.msg {
+    max-width: 80vw;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    line-height: 22px;
+    margin-bottom: 28px;
+}
+button.btn {
+    padding: 9px 20px;
+}
+
+
+}
